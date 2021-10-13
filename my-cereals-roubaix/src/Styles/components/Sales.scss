@@ -1,0 +1,120 @@
+.Sales {
+    
+    .blocs, .blocs1, .blocs2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        
+
+        .sale1, .sale2, .sale3 {
+            margin: 0 auto;
+            height: 350px;
+            border-radius: 15px;
+        }
+
+        .wrappers {
+            text-align: center;
+            h3{
+                font-family: 'Alex Brush', cursive;
+                font-size: 2rem;
+            }
+            p {
+                .prix {
+                    font-family: 'Avenir Next Condensed';
+                    line-height: 2;
+                }
+                
+                .sale {
+                    font-family: 'Avenir Next Condensed Medium';
+                    font-size: 1rem;
+                }
+            }
+            .par { 
+                padding-bottom: 10px;
+            }
+            .h3 {
+                background: #FCF1E9;
+                width: 400px;
+                height: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: none;
+                font-size: 18px;
+                font-weight: 700;
+                padding-top: 20px;
+                margin: 0 auto;
+                font-family: 'Avenir Next Condensed';
+            }
+        }
+    }
+    
+    hr {
+        border: 0;
+        height: 4px;
+        background: $color-2;
+        background-image: linear-gradient(to right, $color-3, $color-2, $color-3);
+        width: 95%;
+    }
+    .footer {
+        margin-top: -10px;
+    }
+    
+}
+
+@media screen and (min-width:960px) {
+    .Sales {
+        .blocs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 20px;
+            
+            .sale1, .sale3 {
+                height: 400px;
+                width: 400px;
+            }
+            .wrappers {
+                transform: translateX(-3%);
+
+                .h3 { 
+                margin-left: 10px;
+                }
+            }             
+
+            h3, p {
+                width: 500px;
+            }
+        }
+        .blocs1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .sale2 {
+                transform: translate(140%);
+                width: 400px;
+                height: 450px;
+
+            }
+            
+            .wrappers {
+                transform: translate(-85%);
+                h3, p {
+                    width: 450px;
+                }
+                .h3 { 
+                    margin-left: 10px;
+                    }
+            }
+            
+
+        }
+        
+    }
+}
+
+@media screen and (min-width:829px) {
+    .blocs1 {
+        .sale1 {
+            transform: translate(200%);
+        }
+    }
+}

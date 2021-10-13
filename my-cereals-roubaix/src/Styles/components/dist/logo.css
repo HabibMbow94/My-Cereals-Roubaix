@@ -1,0 +1,21 @@
+.logonoir {
+  display: block;
+  margin: -12px 20px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 960px) {
+  .logonoir {
+    margin: -120px 0px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logonoir {
+    margin: -100px 40px;
+  }
+}

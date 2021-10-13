@@ -1,0 +1,98 @@
+.Produits h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.Produits .blocs, .Produits .blocs1, .Produits .blocs2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  border-bottom: 3px solid #000000;
+}
+.Produits .blocs .img1, .Produits .blocs1 .img1, .Produits .blocs2 .img1 {
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 15px;
+}
+.Produits .blocs .img2, .Produits .blocs1 .img2, .Produits .blocs2 .img2 {
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 30px;
+}
+.Produits .blocs .wrappers, .Produits .blocs1 .wrappers, .Produits .blocs2 .wrappers {
+  text-align: center;
+}
+.Produits .blocs .wrappers h3, .Produits .blocs1 .wrappers h3, .Produits .blocs2 .wrappers h3 {
+  font-family: "Cookie", cursive;
+  font-size: 1.7rem;
+}
+.Produits .blocs .wrappers p .prix, .Produits .blocs1 .wrappers p .prix, .Produits .blocs2 .wrappers p .prix {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2;
+}
+.Produits .blocs .wrappers p .ingredient, .Produits .blocs1 .wrappers p .ingredient, .Produits .blocs2 .wrappers p .ingredient {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 2;
+}
+.Produits .blocs .wrappers p .boisson, .Produits .blocs1 .wrappers p .boisson, .Produits .blocs2 .wrappers p .boisson {
+  font-family: "Roboto", sans-serif;
+}
+.Produits .blocs .wrappers .par, .Produits .blocs1 .wrappers .par, .Produits .blocs2 .wrappers .par {
+  padding-bottom: 10px;
+}
+.Produits .blocs .wrappers .h3, .Produits .blocs1 .wrappers .h3, .Produits .blocs2 .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.Produits .blocs2 {
+  border-bottom: none;
+}
+.Produits .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 750px) {
+  .Produits .blocs, .Produits .blocs2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Produits .blocs .img1, .Produits .blocs2 .img1 {
+    width: 400px;
+  }
+  .Produits .blocs .sale1, .Produits .blocs .sale3, .Produits .blocs2 .sale1, .Produits .blocs2 .sale3 {
+    height: 400px;
+  }
+  .Produits .blocs h3, .Produits .blocs p, .Produits .blocs2 h3, .Produits .blocs2 p {
+    width: 350px;
+  }
+  .Produits .blocs1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Produits .blocs1 .img1 {
+    transform: translate(180%);
+    width: 350px;
+  }
+  .Produits .blocs1 .sale2 {
+    height: 350px;
+  }
+  .Produits .blocs1 .wrappers {
+    transform: translate(-100%);
+  }
+}
+@media screen and (min-width: 829px) {
+  .blocs1 .img1 {
+    transform: translate(200%);
+  }
+}

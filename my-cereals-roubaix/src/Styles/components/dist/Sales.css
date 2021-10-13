@@ -1,0 +1,97 @@
+.Sales h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.Sales .blocs, .Sales .blocs1, .Sales .blocs2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Sales .blocs .sale1, .Sales .blocs .sale2, .Sales .blocs .sale3, .Sales .blocs1 .sale1, .Sales .blocs1 .sale2, .Sales .blocs1 .sale3, .Sales .blocs2 .sale1, .Sales .blocs2 .sale2, .Sales .blocs2 .sale3 {
+  margin: 0 auto;
+  height: 350px;
+  border-radius: 15px;
+}
+.Sales .blocs .wrappers, .Sales .blocs1 .wrappers, .Sales .blocs2 .wrappers {
+  text-align: center;
+}
+.Sales .blocs .wrappers h3, .Sales .blocs1 .wrappers h3, .Sales .blocs2 .wrappers h3 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+.Sales .blocs .wrappers p .prix, .Sales .blocs1 .wrappers p .prix, .Sales .blocs2 .wrappers p .prix {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 2;
+}
+.Sales .blocs .wrappers p .sale, .Sales .blocs1 .wrappers p .sale, .Sales .blocs2 .wrappers p .sale {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 0;
+}
+.Sales .blocs .wrappers .par, .Sales .blocs1 .wrappers .par, .Sales .blocs2 .wrappers .par {
+  padding-bottom: 10px;
+}
+.Sales .blocs .wrappers .h3, .Sales .blocs1 .wrappers .h3, .Sales .blocs2 .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.Sales hr {
+  border: 0;
+  height: 3px;
+  background: #095484;
+  background-image: linear-gradient(to right, #ccc, #095484, #ccc);
+  width: 95%;
+}
+.Sales .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 750px) {
+  .Sales .blocs, .Sales .blocs2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Sales .blocs .sale1, .Sales .blocs .sale3, .Sales .blocs2 .sale1, .Sales .blocs2 .sale3 {
+    height: 400px;
+    width: 400px;
+  }
+  .Sales .blocs .wrappers, .Sales .blocs2 .wrappers {
+    transform: translateX(-3%);
+  }
+  .Sales .blocs h3, .Sales .blocs p, .Sales .blocs2 h3, .Sales .blocs2 p {
+    width: 500px;
+  }
+  .Sales .blocs1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Sales .blocs1 .sale2 {
+    transform: translate(140%);
+    width: 400px;
+    height: 450px;
+  }
+  .Sales .blocs1 .wrappers {
+    transform: translate(-85%);
+  }
+  .Sales .blocs1 .wrappers h3, .Sales .blocs1 .wrappers p {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 829px) {
+  .blocs1 .sale1 {
+    transform: translate(200%);
+  }
+}

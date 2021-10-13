@@ -1,0 +1,276 @@
+
+.Histoire {
+    .paragraphe1 {
+        margin: 0 auto;
+        width: 85vw;
+        font-family: 'Avenir Next Condensed', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .timeline-section{
+        background-color: $color-3;
+        min-height: 100vh;
+        padding: 50px 15px;
+
+        .timeline-items{
+            max-width: 90vw;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            .timeline-item:before{
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 100%;
+                background-color: $color-2;
+                left: calc(50% - 5px);
+            }
+            .timeline-item{
+                margin-bottom: 25px;
+                width: 100%;
+                position: relative;
+
+                .timeline-item:last-child{
+                    margin-bottom: 0;
+                }
+                .timeline-item:nth-child(odd){
+                    padding-right: calc(50% + 30px);
+                    text-align: right;
+                }
+                .timeline-item:nth-child(even){
+                    padding-left: calc(50% + 30px);
+                }
+                .timeline-dot{
+                    height: 40px;
+                    width: 40px;
+                    padding-top: 10px;
+                    padding-left: 3px;
+                    text-align: center;
+                    color: $color-3;
+                    font-family: "Avenir Next Condensed";
+                    background-color: $color-2;
+                    position: absolute;
+                    left: calc(50% - 25px);
+                    border-radius: 43% 57% 65% 35% / 73% 62% 38% 27% ;
+                    top: -25px;
+                }
+                .timeline-date{
+                    margin:50px 0 15px;
+                }
+
+                .timeline-content{
+                    padding: 0px;
+                    border-radius: 5px;
+                
+                    p {
+                        
+                        text-align: justify;
+                        font-family: 'Avenir Next Condensed Medium';
+                        font-size: 18px;
+                        background-color: $color-3;
+                        color: $color-2;
+                        line-height: 22px;
+                        width: 30vw;
+                        span {
+                            font-family: 'Avenir Next Condensed';
+                                text-transform: uppercase;
+                                font-size: 1rem;
+                        }
+                    }
+                    .juillet {
+                        display: block;
+                        transform: translate(165%);
+                    }
+                    .septembre {
+                        display: block;
+                        transform: translate(32%);
+                        text-align: right;
+                        width: 30vw;
+                    }
+                    .mars {
+                        display: block;
+                        transform: translate(141%);
+                        margin-bottom: 10px;
+                        width: 35vw;
+                    }
+                    .avril {
+                        display: block;
+                        transform: translate(32%, 0%);
+                    }
+                    .juin {
+                        display: block;
+                        transform: translate(165%, -20%);
+                    }
+                    .juillet1 {
+                        display: block;
+                        transform: translate(32%,-40%);
+                    }
+                    .novembre {
+                        display: block;
+                        transform: translate(165%, -20%);
+                    }
+                    .avril1 {
+                        display: block;
+                        text-align: right;
+                        transform: translate(30%);
+                    }
+
+                    .juin1 {
+                        display: block;
+                        transform: translate(165%, -20%);
+                    }
+                    .aout {
+                        display: block;
+                        text-align: right;
+                        transform: translate(30%, -150%);
+                    }
+                    .septembre1 {
+                        display: block;
+                        transform: translate(165%, -30%);
+                    }
+                    hr {
+                        width: 45px;
+                        height: 2px;
+                        background: $color-2;
+                    }
+                    .hr1 {
+                        display: block;
+                        transform: translate(50%, -1400%);
+                    }
+                    .hr2 {
+                        display: block;
+                        transform: translate(-60%, -1400%);
+                    }
+
+                    .hr3{
+                        display: block;
+                        transform: translate(50%, -1200%);
+                    }
+                    
+                    .hr4 {
+                        display: block;
+                        transform: translate(-60%,-1800%);
+                    }
+                    .hr5{
+                        display: block;
+                        transform: translate(50%, -2200%);
+                    }
+                    .hr6 {
+                        display: block;
+                        transform: translate(-60%, -2600%);
+                    }
+                    .hr7 {
+                        display: block;
+                        transform: translate(50%, -4200%);
+                    }
+                    .hr8 {
+                        display: block;
+                        transform: translate(-60%, -1300%);
+                    }
+                    .hr9 {
+                        display: block;
+                        transform: translate(50%, -2200%);
+                    }
+                    .hr10 {
+                        display: block;
+                        transform: translate(-60%, -1600%);
+                    }
+                    .hr11 {
+                        display: block;
+                        transform: translate(50%, -1700%);
+                    }
+                }
+                
+            }
+        }
+    }
+    .footer {
+        margin-top: -2%;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px) {
+    
+    .Histoire {
+       
+        .timeline-section {
+            .timeline-items {
+                
+                .timeline-item:before{
+                    
+                    display: none;
+                }
+
+                .timeline-item {
+                    .timeline-item:nth-child(odd){
+                        padding-right: 0;
+                        text-align: left;
+                    }
+                    .timeline-item:nth-child(odd),
+                    .timeline-item:nth-child(even){
+                        padding-left: 37px;
+                    }
+                
+                    .timeline-content {
+                        p {
+                            margin: 0 auto;
+                        }
+                        .juillet, .juillet1, .septembre, .septembre1, .avril, .avril1, .juin, .juin1, .aout, .mars, .novembre {
+                            transform: none;
+                            width: 80vw;
+                            text-align: center;
+                            padding: 10px;
+                        }
+                            
+                        .hr1, .hr2, .hr3, .hr4, .hr5, .hr6, .hr7, .hr8, .hr9, .hr10, .hr11 {
+                                display: none;
+                        }
+                    }
+                    .timeline-dot{
+                        left:48%;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+            
+    }
+        
+        
+}
+
+/* responsive 
+@media(max-width: 960px){
+	
+    .timeline-content {
+        p {
+            margin: 0 auto;
+        }
+        .juillet, .juillet1, .septembre, .septembre1, .avril, .avril1, .juin, .juin1, .aout, .mars, .novembre {
+            transform: none;
+            width: 80vw;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .hr1, .hr2, .hr3, .hr4, .hr5, .hr6, .hr7, .hr8 {
+            display: none;
+        }
+    }
+    
+	
+	.timeline-dot{
+		left:48%;
+        padding-left: 8px;
+	}
+}
+*/
