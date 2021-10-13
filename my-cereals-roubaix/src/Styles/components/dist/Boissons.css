@@ -1,0 +1,96 @@
+.Boissons h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.Boissons .blocs, .Boissons .blocs1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Boissons .blocs .Boisson1, .Boissons .blocs1 .Boisson1 {
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 15px;
+}
+.Boissons .blocs .Boisson2, .Boissons .blocs1 .Boisson2 {
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 30px;
+}
+.Boissons .blocs .wrappers, .Boissons .blocs1 .wrappers {
+  text-align: center;
+}
+.Boissons .blocs .wrappers h3, .Boissons .blocs1 .wrappers h3 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+.Boissons .blocs .wrappers p .prix, .Boissons .blocs1 .wrappers p .prix {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 2;
+}
+.Boissons .blocs .wrappers p .ingredient, .Boissons .blocs1 .wrappers p .ingredient {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+.Boissons .blocs .wrappers p .boisson, .Boissons .blocs1 .wrappers p .boisson {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 0;
+}
+.Boissons .blocs .wrappers .par, .Boissons .blocs1 .wrappers .par {
+  padding-bottom: 10px;
+}
+.Boissons .blocs .wrappers .h3, .Boissons .blocs1 .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.Boissons .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 750px) {
+  .Boissons .blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Boissons .blocs .img1 {
+    width: 400px;
+  }
+  .Boissons .blocs .Boisson1, .Boissons .blocs .Boisson2 {
+    height: 400px;
+  }
+  .Boissons .blocs h3, .Boissons .blocs p {
+    width: 350px;
+  }
+  .Boissons .blocs1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Boissons .blocs1 .Boisson2 {
+    transform: translate(180%);
+    width: 350px;
+    height: 350px;
+  }
+  .Boissons .blocs1 .wrappers {
+    transform: translate(-100%);
+  }
+}
+@media screen and (min-width: 829px) {
+  .blocs1 .Boisson2 {
+    transform: translate(200%);
+  }
+}

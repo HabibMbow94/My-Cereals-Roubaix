@@ -1,0 +1,1323 @@
+@import url(//db.onlinewebfonts.com/c/158fa6012dff0f88241ad898c46c0118?family=Avenir+Next+W1G);
+@import url(//db.onlinewebfonts.com/c/164fce79eadeff648f8b1e539b2975db?family=Avenir+Next+Condensed+Medium);
+@import url(//db.onlinewebfonts.com/c/2919517cb534a742df4474836ca67452?family=Avenir+Next+Condensed);
+@import url(//db.onlinewebfonts.com/c/5c294df6a72dc706b380d5ec2b761c66?family=next);
+@import url(//db.onlinewebfonts.com/c/dd03a756e0bb49461635fc31c00ab93e?family=Bistro);
+@import url(//db.onlinewebfonts.com/c/942ea2c4ddf6b40736d3adbc9e2f1c40?family=Script);
+@import url(//db.onlinewebfonts.com/c/d09e39f809d6ccb51b58ddc0f9f5ad6d?family=SCRIPT+9);
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+.navigation .nav-active {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+.navigation .dropdown-link {
+  display: flex;
+  align-items: center;
+}
+.navigation a {
+  letter-spacing: 1px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed";
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  margin-right: 2rem;
+}
+.navigation a:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+}
+.navigation .nav-active:after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
+}
+
+@media screen and (min-width: 750px) {
+  .navigation {
+    display: flex;
+  }
+  .navigation a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .navigation a {
+    font-size: 18px;
+  }
+}
+.Acceuil {
+  width: 100%;
+  height: 100vh;
+}
+.Acceuil .pageaccueil {
+  width: 100%;
+  height: 30vh;
+  min-height: 400px;
+  background: url("../../Assets/header3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Acceuil .bloc .blocs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  font-family: "Avenir Next Condensed";
+}
+.Acceuil .bloc .blocs .img1 {
+  margin: 0 auto;
+  height: 200px;
+}
+.Acceuil .bloc .blocs .wrappers {
+  border-top: solid 5px #FCF1E9;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.Acceuil .bloc .blocs .wrappers p span {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 700;
+}
+.Acceuil hr {
+  border: 0;
+  height: 3px;
+  background: #000000;
+  background-image: linear-gradient(to right, #FFFFFF, #000000, #FFFFFF);
+}
+.Acceuil .social {
+  margin: 0 20px;
+}
+.Acceuil .pagebas {
+  width: 100%;
+  height: 30vh;
+  min-height: 200px;
+  background: url("../../Assets/bas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+.Acceuil .footer {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .Acceuil .bloc {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .Acceuil .bloc .blocs {
+    padding-top: 50px;
+  }
+  .Acceuil .pageaccueil {
+    margin: 0 auto;
+    width: 95vw;
+    border-radius: 15px;
+    height: 30vh;
+  }
+  .Acceuil .pagebas {
+    width: 95%;
+    margin: 0 auto;
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Acceuil .pageaccueil {
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .Acceuil .pagebas {
+    margin: 0 auto;
+    height: 70vh;
+  }
+}
+/*
+@media screen and (max-width:960px) {
+    .Acceuil {
+        .pageaccueil {
+            background: url("../../Assets/headermbile.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 50vh;
+        }
+        .bloc {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            border-bottom: none;
+            margin: 0 auto;
+
+            .container {
+                width: 100%;
+                .contact-form {
+                margin: 0 auto;
+                padding: 10px 20px;
+                transform: translate(0%);
+                }
+            }
+            .bloc1 {
+                margin: 0 auto;
+                display: inline;
+
+                .img {                   
+
+                    img {
+                        height: 250px;
+                    }
+
+                }
+                p {
+                    margin: 0 auto;
+                    span {
+                        font-size: 1rem;
+                        line-height: normal;
+                    }
+
+                }
+            }
+
+        }
+        .social {
+            margin-top: 0%;
+            text-align: center;
+            border-top: 2px solid #000000;
+        }
+        .pagebas {
+            margin: 0 auto;
+            background: url("../../Assets/basmobile.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px 30px;
+            width: 60%;
+            height: 20vh;
+            img {
+                display: none;
+            }
+        }
+    }
+    .footer {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .Acceuil {
+        margin: 0 auto;
+        .pageaccueil {
+            height: 100%;
+
+        }
+        .bloc {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .social {
+            margin-top: 20px;
+            border-top: 2px solid #000000;
+        }
+
+    }
+
+}
+*/
+/*button burger creation middle bar*/
+.button_burger {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 5px;
+  z-index: 2;
+}
+
+.button_burger span {
+  width: 70%;
+  height: 3px;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s;
+}
+
+/*top / bottom burger bar icon*/
+.button_burger span::before,
+.button_burger span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  transition: transform 0.5s;
+}
+
+.button_burger span::before {
+  transform: translateY(-10px);
+}
+
+.button_burger span::after {
+  transform: translateY(10px);
+}
+
+/* button animation*/
+.button_burger.active span {
+  background-color: transparent;
+}
+
+.button_burger.active span::before {
+  transform: rotate(45deg);
+}
+
+.button_burger.active span::after {
+  transform: rotate(-45deg);
+}
+
+.burger-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  padding-top: 30%;
+  left: 0;
+  right: 0;
+  background-color: #474747;
+  z-index: -1;
+  height: 100vh;
+  opacity: 0.8;
+}
+.burger-open a {
+  display: block;
+  color: #FAF3F3;
+  text-decoration: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.burger-open .nav-active {
+  border-bottom: solid 2px #FAF3F3;
+  color: #FAF3F3;
+}
+
+.burger-close {
+  visibility: hidden;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .button_burger {
+    display: none;
+  }
+}
+.logonoir {
+  display: block;
+  margin: -12px 20px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 960px) {
+  .logonoir {
+    margin: -120px 0px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logonoir {
+    margin: -100px 40px;
+  }
+}
+.Header {
+  height: 10vh;
+  width: 100%;
+  background-color: #FCF1E9;
+}
+.Header .langue {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .Header {
+    margin-bottom: 20px;
+    height: 15vh;
+  }
+  .Header .langue {
+    display: block;
+    margin: -90px 90%;
+    position: relative;
+  }
+  .Header .langue .fran {
+    width: 22px;
+    display: block;
+    border-right: 3px solid #000000;
+  }
+  .Header .langue .ang {
+    display: block;
+    margin-left: 30px;
+    margin-top: -20px;
+    width: 22px;
+  }
+  .Header .langue a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+  }
+}
+.container * {
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.container .contact-form {
+  font-family: "Avenir Next";
+  background: #FFFFFF;
+  padding: 0 30px 10px;
+}
+.container .contact-form h2 {
+  margin-top: 35px;
+  font-size: 18px;
+  text-align: center;
+}
+.container .contact-form .form-content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) 105px;
+}
+.container .contact-form .form-content input,
+.container .contact-form .form-content textarea {
+  background: none;
+  font-family: "Avenir Next Condensed";
+  font-size: 1.1rem;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+}
+.container .contact-form .form-content input::placeholder,
+.container .contact-form .form-content textarea::placeholder {
+  color: #000000;
+  font-weight: 600;
+  font-family: "Avenir Next Condensed";
+  text-align: center;
+}
+.container .contact-form .form-content input,
+.container .contact-form .form-content .email-content,
+.container .contact-form .form-content textarea {
+  width: 90%;
+  margin: 0 auto;
+}
+.container .contact-form .form-content input {
+  padding: 24px 0 12px;
+}
+.container .contact-form .form-content .email-content {
+  position: relative;
+}
+.container .contact-form .form-content .email-content input {
+  width: 100%;
+}
+.container .contact-form .form-content #not-mail {
+  display: none;
+  position: absolute;
+  top: 4px;
+  color: #FCC00C;
+  right: 0;
+  transform-origin: 50% 50%;
+}
+
+@keyframes dongle {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 0px);
+  }
+  30% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  70% {
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    transform: translate(10px, 0px);
+  }
+  90% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.container textarea {
+  resize: none;
+  padding: 24px 0;
+}
+.container .button {
+  font-size: 1.3rem;
+  color: #000000;
+  font-family: "Avenir Next Condensed";
+  font-weight: 600;
+  background-color: #FCF1E9;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 90%;
+  height: 50px;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+.container .button:hover {
+  letter-spacing: 2px;
+}
+.container .error::placeholder {
+  color: #FCF1E9;
+}
+.container .form-message {
+  margin-top: 10px;
+  padding: 12px;
+  opacity: 0;
+  transition: 0.2s ease;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+}
+
+@media screen and (max-width: 960px) {
+  .container .contact-form h2 {
+    font-size: 18px;
+  }
+  .container .contact-form input::placeholder,
+.container .contact-form textarea::placeholder {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container .contact-form h2 {
+    font-size: 1.7rem;
+  }
+  .container .contact-form input::placeholder,
+.container .contact-form textarea::placeholder {
+    font-size: 25px;
+  }
+}
+.social h4 {
+  text-align: center;
+  font-family: "Avenir Next Condensed";
+  font-weight: 600;
+}
+.social ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.social ul img {
+  height: 30px;
+  border-radius: 100%;
+}
+.social ul .facebook {
+  display: block;
+  transform: translate(-5%);
+}
+.social ul .instagram {
+  display: block;
+  transform: translate(-1%, -100%);
+}
+.social ul .snapchat {
+  display: block;
+  transform: translate(3%, -200%);
+}
+
+@media screen and (max-width: 750px) {
+  .social ul img {
+    height: 20px;
+  }
+  .social ul .facebook {
+    transform: translate(0%, 0%);
+  }
+  .social ul .instagram {
+    transform: translate(0%, 0%);
+  }
+  .social ul .snapchat {
+    transform: translate(0%, 0%);
+  }
+}
+.footer {
+  height: 20vh;
+  background-color: #FCF1E9;
+  margin-top: 80px;
+  font-family: "Avenir Next Condensed";
+}
+.footer .fleche {
+  width: 25px;
+  height: 25px;
+  border-left: 3px solid #000000;
+  border-top: 3px solid #000000;
+  margin: 0 auto;
+  transform: rotate(45deg) translateY(20px);
+}
+.footer .row-small {
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+}
+
+.Produits h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.Produits .blocs, .Produits .blocs1, .Produits .blocs2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  border-bottom: 3px solid #000000;
+}
+.Produits .blocs .img1, .Produits .blocs1 .img1, .Produits .blocs2 .img1 {
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 15px;
+}
+.Produits .blocs .img2, .Produits .blocs1 .img2, .Produits .blocs2 .img2 {
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 30px;
+}
+.Produits .blocs .wrappers, .Produits .blocs1 .wrappers, .Produits .blocs2 .wrappers {
+  text-align: center;
+}
+.Produits .blocs .wrappers h3, .Produits .blocs1 .wrappers h3, .Produits .blocs2 .wrappers h3 {
+  font-family: "Cookie", cursive;
+  font-size: 1.7rem;
+}
+.Produits .blocs .wrappers p .prix, .Produits .blocs1 .wrappers p .prix, .Produits .blocs2 .wrappers p .prix {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2;
+}
+.Produits .blocs .wrappers p .ingredient, .Produits .blocs1 .wrappers p .ingredient, .Produits .blocs2 .wrappers p .ingredient {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 2;
+}
+.Produits .blocs .wrappers p .boisson, .Produits .blocs1 .wrappers p .boisson, .Produits .blocs2 .wrappers p .boisson {
+  font-family: "Roboto", sans-serif;
+}
+.Produits .blocs .wrappers .par, .Produits .blocs1 .wrappers .par, .Produits .blocs2 .wrappers .par {
+  padding-bottom: 10px;
+}
+.Produits .blocs .wrappers .h3, .Produits .blocs1 .wrappers .h3, .Produits .blocs2 .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.Produits .blocs2 {
+  border-bottom: none;
+}
+.Produits .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 750px) {
+  .Produits .blocs, .Produits .blocs2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Produits .blocs .img1, .Produits .blocs2 .img1 {
+    width: 400px;
+  }
+  .Produits .blocs .sale1, .Produits .blocs .sale3, .Produits .blocs2 .sale1, .Produits .blocs2 .sale3 {
+    height: 400px;
+  }
+  .Produits .blocs h3, .Produits .blocs p, .Produits .blocs2 h3, .Produits .blocs2 p {
+    width: 350px;
+  }
+  .Produits .blocs1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Produits .blocs1 .img1 {
+    transform: translate(180%);
+    width: 350px;
+  }
+  .Produits .blocs1 .sale2 {
+    height: 350px;
+  }
+  .Produits .blocs1 .wrappers {
+    transform: translate(-100%);
+  }
+}
+@media screen and (min-width: 829px) {
+  .blocs1 .img1 {
+    transform: translate(200%);
+  }
+}
+.dropdown-menu {
+  position: absolute;
+  width: 6rem;
+  top: 10px;
+  list-style: none;
+  text-align: start;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  padding: 0 20px;
+}
+.dropdown-menu li {
+  cursor: pointer;
+}
+.dropdown-menu .dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 0px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.dropdown-menu .dropdown-link:hover {
+  border-bottom: 2px solid #000000;
+}
+.dropdown-menu .clicked {
+  display: none;
+}
+
+.Sales .blocs, .Sales .blocs1, .Sales .blocs2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Sales .blocs .sale1, .Sales .blocs .sale2, .Sales .blocs .sale3, .Sales .blocs1 .sale1, .Sales .blocs1 .sale2, .Sales .blocs1 .sale3, .Sales .blocs2 .sale1, .Sales .blocs2 .sale2, .Sales .blocs2 .sale3 {
+  margin: 0 auto;
+  height: 350px;
+  border-radius: 15px;
+}
+.Sales .blocs .wrappers, .Sales .blocs1 .wrappers, .Sales .blocs2 .wrappers {
+  text-align: center;
+}
+.Sales .blocs .wrappers h3, .Sales .blocs1 .wrappers h3, .Sales .blocs2 .wrappers h3 {
+  font-family: "Script";
+  font-size: 2rem;
+}
+.Sales .blocs .wrappers p .prix, .Sales .blocs1 .wrappers p .prix, .Sales .blocs2 .wrappers p .prix {
+  font-family: "Avenir Next Condensed";
+  line-height: 2;
+}
+.Sales .blocs .wrappers p .sale, .Sales .blocs1 .wrappers p .sale, .Sales .blocs2 .wrappers p .sale {
+  font-family: "Avenir Next Condensed Medium";
+  font-size: 1rem;
+}
+.Sales .blocs .wrappers .par, .Sales .blocs1 .wrappers .par, .Sales .blocs2 .wrappers .par {
+  padding-bottom: 10px;
+}
+.Sales .blocs .wrappers .h3, .Sales .blocs1 .wrappers .h3, .Sales .blocs2 .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+  font-family: "Avenir Next Condensed";
+}
+.Sales hr {
+  border: 0;
+  height: 4px;
+  background: #000000;
+  background-image: linear-gradient(to right, #FFFFFF, #000000, #FFFFFF);
+  width: 95%;
+}
+.Sales .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 960px) {
+  .Sales .blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Sales .blocs .sale1, .Sales .blocs .sale3 {
+    height: 400px;
+    width: 400px;
+  }
+  .Sales .blocs .wrappers {
+    transform: translateX(-3%);
+  }
+  .Sales .blocs .wrappers .h3 {
+    margin-left: 10px;
+  }
+  .Sales .blocs h3, .Sales .blocs p {
+    width: 500px;
+  }
+  .Sales .blocs1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Sales .blocs1 .sale2 {
+    transform: translate(140%);
+    width: 400px;
+    height: 450px;
+  }
+  .Sales .blocs1 .wrappers {
+    transform: translate(-85%);
+  }
+  .Sales .blocs1 .wrappers h3, .Sales .blocs1 .wrappers p {
+    width: 450px;
+  }
+  .Sales .blocs1 .wrappers .h3 {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 829px) {
+  .blocs1 .sale1 {
+    transform: translate(200%);
+  }
+}
+.langues {
+  display: bloc;
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 10px;
+}
+
+.Sucres h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.Sucres .blocs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Sucres .blocs .sucre1, .Sucres .blocs .sucre2 {
+  margin: 0 auto;
+  height: 350px;
+  border-radius: 15px;
+}
+.Sucres .blocs .wrappers {
+  text-align: center;
+}
+.Sucres .blocs .wrappers h3 {
+  font-family: "Script";
+  font-size: 2rem;
+}
+.Sucres .blocs .wrappers p .prix {
+  font-family: "Avenir Next Condensed";
+  font-weight: 700;
+  line-height: 2;
+}
+.Sucres .blocs .wrappers p .sucre {
+  font-family: "Avenir Next Condensed Medium";
+  font-size: 1rem;
+  font-weight: 0;
+}
+.Sucres .blocs .wrappers .par {
+  padding-bottom: 10px;
+}
+.Sucres .blocs .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+  font-family: "Avenir Next Condensed";
+}
+.Sucres hr {
+  border: 0;
+  height: 4px;
+  background: #000000;
+  background-image: linear-gradient(to right, #FFFFFF, #000000, #FFFFFF);
+  width: 95%;
+}
+.Sucres .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 960px) {
+  .Sucres .blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Sucres .blocs .sucre1 {
+    height: 450px;
+    width: 400px;
+  }
+  .Sucres .blocs .sucre2 {
+    transform: translate(0%, -20%);
+    height: 4O0px;
+    width: 400px;
+  }
+  .Sucres .blocs h3, .Sucres .blocs p {
+    width: 500px;
+  }
+  .Sucres .blocs .h3 {
+    margin-left: 10px;
+  }
+}
+.Boissons .blocs, .Boissons .blocs1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Boissons .blocs .Boisson1, .Boissons .blocs1 .Boisson1 {
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 15px;
+}
+.Boissons .blocs .Boisson2, .Boissons .blocs1 .Boisson2 {
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 30px;
+}
+.Boissons .blocs .wrappers, .Boissons .blocs1 .wrappers {
+  text-align: center;
+}
+.Boissons .blocs .wrappers h3, .Boissons .blocs1 .wrappers h3 {
+  font-family: "Script";
+  font-size: 2rem;
+}
+.Boissons .blocs .wrappers hr, .Boissons .blocs1 .wrappers hr {
+  border: 0;
+  height: 2px;
+  background: #000000;
+  background-image: linear-gradient(to right, #FFFFFF, #000000, #FFFFFF);
+  width: 95%;
+}
+.Boissons .blocs .wrappers p .prix, .Boissons .blocs1 .wrappers p .prix {
+  font-family: "Avenir Next Condensed";
+  padding-bottom: 20px;
+}
+.Boissons .blocs .wrappers p .ingredient, .Boissons .blocs1 .wrappers p .ingredient {
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed";
+  font-size: 0.8rem;
+  line-height: 4;
+}
+.Boissons .blocs .wrappers p .boisson, .Boissons .blocs1 .wrappers p .boisson {
+  font-family: "Avenir Next Condensed Medium";
+  font-size: 1rem;
+  font-weight: 0;
+  padding-top: 50px;
+}
+.Boissons .blocs .wrappers .par, .Boissons .blocs1 .wrappers .par {
+  padding-bottom: 10px;
+}
+.Boissons .blocs .wrappers .h3, .Boissons .blocs1 .wrappers .h3 {
+  background: #FCF1E9;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.Boissons hr {
+  border: 0;
+  height: 4px;
+  background: #000000;
+  background-image: linear-gradient(to right, #FFFFFF, #000000, #FFFFFF);
+  width: 95%;
+}
+.Boissons .footer {
+  margin-top: -10px;
+}
+
+@media screen and (min-width: 960px) {
+  .Boissons .blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Boissons .blocs .Boisson1 {
+    height: 400px;
+    width: 400px;
+  }
+  .Boissons .blocs h3, .Boissons .blocs p {
+    width: 350px;
+  }
+  .Boissons .blocs1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Boissons .blocs1 .Boisson2 {
+    transform: translate(180%);
+    width: 350px;
+    height: 350px;
+  }
+  .Boissons .blocs1 .wrappers {
+    transform: translate(-100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blocs1 .Boisson2 {
+    transform: translate(200%);
+  }
+}
+.Histoire .paragraphe1 {
+  margin: 0 auto;
+  width: 85vw;
+  font-family: "Avenir Next Condensed", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.Histoire .timeline-section {
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  padding: 50px 15px;
+}
+.Histoire .timeline-section .timeline-items {
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.Histoire .timeline-section .timeline-items .timeline-item:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #000000;
+  left: calc(50% - 5px);
+}
+.Histoire .timeline-section .timeline-items .timeline-item {
+  margin-bottom: 25px;
+  width: 100%;
+  position: relative;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-item:last-child {
+  margin-bottom: 0;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-dot {
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  padding-left: 3px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Avenir Next Condensed";
+  background-color: #000000;
+  position: absolute;
+  left: calc(50% - 25px);
+  border-radius: 43% 57% 65% 35%/73% 62% 38% 27%;
+  top: -25px;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-date {
+  margin: 50px 0 15px;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content {
+  padding: 0px;
+  border-radius: 5px;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content p {
+  text-align: justify;
+  font-family: "Avenir Next Condensed Medium";
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 22px;
+  width: 30vw;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content p span {
+  font-family: "Avenir Next Condensed";
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juillet {
+  display: block;
+  transform: translate(165%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .septembre {
+  display: block;
+  transform: translate(32%);
+  text-align: right;
+  width: 30vw;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .mars {
+  display: block;
+  transform: translate(141%);
+  margin-bottom: 10px;
+  width: 35vw;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .avril {
+  display: block;
+  transform: translate(32%, 0%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juin {
+  display: block;
+  transform: translate(165%, -20%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juillet1 {
+  display: block;
+  transform: translate(32%, -40%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .novembre {
+  display: block;
+  transform: translate(165%, -20%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .avril1 {
+  display: block;
+  text-align: right;
+  transform: translate(30%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juin1 {
+  display: block;
+  transform: translate(165%, -20%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .aout {
+  display: block;
+  text-align: right;
+  transform: translate(30%, -150%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .septembre1 {
+  display: block;
+  transform: translate(165%, -30%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content hr {
+  width: 45px;
+  height: 2px;
+  background: #000000;
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr1 {
+  display: block;
+  transform: translate(50%, -1400%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr2 {
+  display: block;
+  transform: translate(-60%, -1400%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr3 {
+  display: block;
+  transform: translate(50%, -1200%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr4 {
+  display: block;
+  transform: translate(-60%, -1800%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr5 {
+  display: block;
+  transform: translate(50%, -2200%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr6 {
+  display: block;
+  transform: translate(-60%, -2600%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr7 {
+  display: block;
+  transform: translate(50%, -4200%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr8 {
+  display: block;
+  transform: translate(-60%, -1300%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr9 {
+  display: block;
+  transform: translate(50%, -2200%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr10 {
+  display: block;
+  transform: translate(-60%, -1600%);
+}
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr11 {
+  display: block;
+  transform: translate(50%, -1700%);
+}
+.Histoire .footer {
+  margin-top: -2%;
+}
+
+@media screen and (max-width: 960px) {
+  .Histoire .timeline-section .timeline-items .timeline-item:before {
+    display: none;
+  }
+  .Histoire .timeline-section .timeline-items .timeline-item .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .Histoire .timeline-section .timeline-items .timeline-item .timeline-item:nth-child(odd),
+.Histoire .timeline-section .timeline-items .timeline-item .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .Histoire .timeline-section .timeline-items .timeline-item .timeline-content p {
+    margin: 0 auto;
+  }
+  .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juillet, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juillet1, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .septembre, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .septembre1, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .avril, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .avril1, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juin, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .juin1, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .aout, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .mars, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .novembre {
+    transform: none;
+    width: 80vw;
+    text-align: center;
+    padding: 10px;
+  }
+  .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr1, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr2, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr3, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr4, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr5, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr6, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr7, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr8, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr9, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr10, .Histoire .timeline-section .timeline-items .timeline-item .timeline-content .hr11 {
+    display: none;
+  }
+  .Histoire .timeline-section .timeline-items .timeline-item .timeline-dot {
+    left: 48%;
+    padding-left: 8px;
+  }
+}
+/* responsive 
+@media(max-width: 960px){
+
+    .timeline-content {
+        p {
+            margin: 0 auto;
+        }
+        .juillet, .juillet1, .septembre, .septembre1, .avril, .avril1, .juin, .juin1, .aout, .mars, .novembre {
+            transform: none;
+            width: 80vw;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hr1, .hr2, .hr3, .hr4, .hr5, .hr6, .hr7, .hr8 {
+            display: none;
+        }
+    }
+
+
+	.timeline-dot{
+		left:48%;
+        padding-left: 8px;
+	}
+}
+*/
+.Reservation .blocs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Reservation .blocs .img {
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 15px;
+}
+.Reservation .blocs .wrappers {
+  text-align: center;
+}
+.Reservation .blocs .wrappers h3 {
+  font-family: "Script";
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+.Reservation .blocs .wrappers p {
+  font-family: "Avenir Next Condensed Medium";
+  font-size: 1.2rem;
+}
+.Reservation .blocs .wrappers .prix {
+  font-family: "Avenir Next Condensed";
+}
+.Reservation .creneau h3 {
+  margin: 0 auto;
+  text-align: center;
+  background: #FCF1E9;
+  text-transform: uppercase;
+  padding: 20px 0;
+  width: 500px;
+}
+
+@media screen and (min-width: 960px) {
+  .Reservation .blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Reservation .blocs .img {
+    width: 400px;
+  }
+  .Reservation .blocs .wrappers h3, .Reservation .blocs .wrappers p {
+    width: 500px;
+  }
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
+  /* File to be stored at your site */
+}
+@font-face {
+  font-family: "SCRIPT 9";
+  src: url("//db.onlinewebfonts.com/t/d09e39f809d6ccb51b58ddc0f9f5ad6d.eot");
+  src: url("//db.onlinewebfonts.com/t/d09e39f809d6ccb51b58ddc0f9f5ad6d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d09e39f809d6ccb51b58ddc0f9f5ad6d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d09e39f809d6ccb51b58ddc0f9f5ad6d.woff") format("woff"), url("//db.onlinewebfonts.com/t/d09e39f809d6ccb51b58ddc0f9f5ad6d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d09e39f809d6ccb51b58ddc0f9f5ad6d.svg#SCRIPT 9") format("svg");
+}
+@font-face {
+  font-family: "Script";
+  src: url("//db.onlinewebfonts.com/t/942ea2c4ddf6b40736d3adbc9e2f1c40.eot");
+  src: url("//db.onlinewebfonts.com/t/942ea2c4ddf6b40736d3adbc9e2f1c40.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/942ea2c4ddf6b40736d3adbc9e2f1c40.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/942ea2c4ddf6b40736d3adbc9e2f1c40.woff") format("woff"), url("//db.onlinewebfonts.com/t/942ea2c4ddf6b40736d3adbc9e2f1c40.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/942ea2c4ddf6b40736d3adbc9e2f1c40.svg#Script") format("svg");
+}

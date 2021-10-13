@@ -1,0 +1,43 @@
+.Reservation .blocs {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.Reservation .blocs .img {
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 15px;
+}
+.Reservation .blocs .wrappers {
+  text-align: center;
+}
+.Reservation .blocs .wrappers h3 {
+  font-family: "Script";
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+.Reservation .blocs .wrappers p {
+  font-family: "Avenir Next Condensed Medium";
+  font-size: 1.2rem;
+}
+.Reservation .blocs .wrappers .prix {
+  font-family: "Avenir Next Condensed";
+}
+.Reservation .creneau h3 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .Reservation .blocs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+  }
+  .Reservation .blocs .img {
+    width: 400px;
+  }
+  .Reservation .blocs .wrappers h3, .Reservation .blocs .wrappers p {
+    width: 500px;
+  }
+}

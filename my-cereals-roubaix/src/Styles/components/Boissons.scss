@@ -1,0 +1,123 @@
+.Boissons {
+
+    .blocs, .blocs1 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+
+        .Boisson1 {
+            margin: 0 auto;
+            height: 300px;
+            border-radius: 15px;
+        }
+        .Boisson2 {
+            margin: 0 auto;
+            height: 500px;
+            border-radius: 30px;
+        }
+
+        .wrappers {
+            text-align: center;
+            h3{
+                font-family: 'Script';
+                font-size: 2rem;
+            }
+            hr {
+                border: 0;
+                height: 2px;
+                background: $color-2;
+                background-image: linear-gradient(to right, $color-3, $color-2, $color-3);
+                width: 95%;
+            }
+
+            p {
+                .prix {
+                    font-family: 'Avenir Next Condensed';
+                    padding-bottom: 20px;
+                }
+
+                .ingredient {
+                    text-transform: uppercase;
+                    font-family: 'Avenir Next Condensed';
+                    font-size: 0.8rem;
+                    line-height: 4;
+                }
+                .boisson {
+                    font-family: 'Avenir Next Condensed Medium';
+                    font-size: 1rem;
+                    font-weight: 00;
+                    padding-top: 50px;
+                }
+            }
+            .par { 
+                padding-bottom: 10px;
+            }
+            .h3 {
+                background: #FCF1E9;
+                width: 400px;
+                height: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: none;
+                font-size: 18px;
+                font-weight: 700;
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+        }
+    }
+    hr {
+        border: 0;
+        height: 4px;
+        background: $color-2;
+        background-image: linear-gradient(to right, $color-3, $color-2, $color-3);
+        width: 95%;
+    }
+
+    .footer {
+        margin-top: -10px;
+    }
+    
+}
+
+@media screen and (min-width:960px) {
+    .Boissons {
+        .blocs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 20px;
+
+            .Boisson1 {
+                height: 400px;
+                width: 400px;
+            }
+             
+
+            h3, p {
+                width: 350px;
+            }
+        }
+        .blocs1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .Boisson2 {
+                transform: translate(180%);
+                width: 350px;
+                height: 350px;
+            }
+            .wrappers {
+                transform: translate(-100%);
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .blocs1 {
+        .Boisson2 {
+            transform: translate(200%);
+        }
+    }
+}

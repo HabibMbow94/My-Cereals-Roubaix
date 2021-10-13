@@ -1,0 +1,320 @@
+/* import React from 'react';
+
+ /* constructor() {
+        super();
+        this.onChangeFirstName = this.onChangeFirstName.bind(this);
+        this.onChangeLastName = this.onChangeLastName.bind(this);
+        this.onChangeEmail = this.onChangeEmail.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+
+        this.state = {
+            db: []
+        }
+    }*/
+
+/*    onChangeFirstName(e) {
+        this.setState({
+            first_name: e.target.value
+        });
+    }
+
+    onChangeLastName(e) {
+        this.setState({
+            last_name: e.target.value
+        });
+    }
+
+    onChangeEmail(e) {
+        this.setState({
+            email: e.target.value
+        });
+    }
+    onSubmit(e) {
+        e.preventDefault();
+
+        const obj = {
+            first_name: this.state.first_name,
+            last_name: this.state.last_name,
+            email: this.state.email
+        };
+
+        axios.post('https://localhost/my-cereals-roubaix/reservation.php', obj)
+        .then(res => console.log(res.data));
+        this.setState = {
+            first_name: '',
+            last_name: '',
+            email: ''
+        }
+    } */
+/*import Logo from '../Components/Logo';
+import Book from '../Components/Book';
+import Main from '../Components/main';
+import ThankYou from '../Components/ThankYou';
+import axios from "axios";*/
+/*
+const Reservations = () => {
+
+    const contructor = (props) => {
+        
+
+        
+
+        
+
+        const 
+        }
+    }
+   /* const [page, setPage]=  useState(0);
+
+    const state = {
+        text : ""
+    };
+    const handleAdd = async e => {
+        e.preventDefault();
+        console.log(this.state.text);
+        let formData = new formData();
+        formData.apend("text".this.state.text);
+        const url = "https://localhost:80/react-backend";
+        axios.post(url,formData)
+        .then(res => console.log(res.data))
+        .catch(err => console.log(err))
+        await  this.setState({
+            text : e.target.value
+        })
+    };
+    const handleSubmit = e => {
+        console.log(this.state.text);
+    };*/
+
+
+    
+
+  /*  return (
+        
+            
+            {/*<Book />
+            <main />
+
+            <div>
+                    {page === 0 ? <Main setPage={setPage} /> : null}
+                    {page === 1 ? <Book setPage={setPage} /> : null}
+                    {page === 2 ? <ThankYou /> : null}
+                </div>
+
+            <div>
+                <input
+                onChange={this.handleAdd}
+                 type="text" className="text" 
+                 value={this.state.text}
+                 placeholder="text" /><br />
+                <button
+                 onClick={this.handleSubmit}
+                 className="submit">Save</button>
+            </div>
+            <ThaankYou /> */
+            
+   /*     
+            <Footer />
+        </div>
+    );
+};
+
+export default Reservations; */
+
+/*const Reservations = () => {
+
+    const url ="http://localhost:4000/my-cereals-roubaix/react-backend/index.php"
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        date: "",
+        time: "",
+        place: ""
+    });
+
+    function handle(e){
+        const newdata= {...data}
+        newdata[e.target.id] = e.target.value
+        setData(newdata)
+        console.log(newdata)
+    }
+    function submit(e) {
+        e.preventDefault();
+        Axios.post(url,{
+            name: data.name,
+            email: data.email,
+            date: data.date,
+            time: data.time,
+            place: data.place
+        })
+        .then(res => {
+            console.log(res.data)
+        })
+    }
+   
+    return (
+        <div className="Reservation">
+            <Header />
+
+            <div className="blocs">
+                <img src="./images/Brunch.jpg" alt="Photos boisson 1" className="img"/>
+                <div className="wrappers">
+                    <h3>Formule Unique</h3>
+                    <p className="prix">18 €</p>
+                    <h3>Formule duo</h3>
+                    <p className="prix">32 € </p>
+                    <p>
+                        <span className="brunch">
+                            Un taost avocat saumon ou chève miel <br />
+                            Un egg muffin bacon <br/>
+                            Un fromage blanc avec du miesli et des fruits <br />
+                            Un jus d'orange pressé ou un Smoothie <br />
+                            Un boisson chaud au choix.
+                        </span>
+                    </p>
+                </div> 
+            </div>
+            <div className="creneau">
+                <h3>Réservez vous selon un créneau</h3>
+                <form onSubmit={(e) =>submit(e)} className="formulaire">
+                    <input 
+                       onChange={(e)=>handle(e)} id="name" 
+                       value={data.name} placeholder="Nom et Prenom" 
+                       type="text" className="input"
+                    />
+                    <br />
+                    <input
+                       type="text" className="input" 
+                       value={data.email} placeholder="email"
+                       onChange={(e) =>handle(e)} id="email"
+                    />
+                    <br />
+                    <input 
+                       onChange={(e)=>handle(e)} id="date" 
+                       value={data.date} placeholder="date" 
+                       type="date" className="input"/>
+                    <br />
+                    <input onChange={(e)=>handle(e)} id="time" value={data.time} placeholder="time" type="time" className="input"/>
+                    <br />
+                    <input onChange={(e)=>handle(e)} id="place" placeholder="Nombre de places" type="number" className="input"/>
+                    <br />
+                    <button>confirmer votre réservation</button>
+                </form>
+            </div>
+        
+            <Footer />
+        </div>
+    );
+};
+
+export default Reservations;
+
+*/
+
+
+/* import React, {Component} from "react";
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
+import FormTable from "../Components/FormTable";
+                 
+export default class Reservations extends Component {
+
+    constructor(){
+        super();
+
+        this.state=({
+            db: []
+        });
+        this.exibirClients();
+    }
+
+    exibirClients(){
+        fetch("http://localhost:4000/my-cereals-roubaix/react-backend/index.php")
+        .then((response)=>response.json())
+        .then((responseJson)=>
+        {
+            this.setState({
+                db: responseJson
+            });
+        })
+    }
+
+    render () {
+        return (
+            <div className="Reservation">
+                <Header />
+                
+                <div className="blocs">
+                    <img src="./images/Brunch.jpg" alt="Photos boisson 1" className="img"/>
+                    <div className="wrappers">
+                        <h3>Formule Unique</h3>
+                        <p className="prix">18 €</p>
+                        <h3>Formule duo</h3>
+                        <p className="prix">32 € </p>
+
+                        <p>
+                            <span className="brunch">
+                            Un taost avocat saumon ou chève miel <br />
+                            Un egg muffin bacon <br/>
+                            Un fromage blanc avec du miesli et des fruits <br />
+                            Un jus d'orange pressé ou un Smoothie <br />
+                            Un boisson chaud au choix.
+                            </span>
+                        </p>
+                    </div> 
+                </div>
+
+                <FormTable arraycarros="{this.state.db}"></FormTable>
+                <Footer />
+            </div>
+
+        )
+    }
+
+}
+*/
+
+
+/*
+
+
+
+    exibirClients(){
+        
+    }
+
+    render () {
+        return (
+            <div className="Reservation">
+                <Header />
+                
+                <div className="blocs">
+                    <img src="./images/Brunch.jpg" alt="Photos boisson 1" className="img"/>
+                    <div className="wrappers">
+                        <h3>Formule Unique</h3>
+                        <p className="prix">18 €</p>
+                        <h3>Formule duo</h3>
+                        <p className="prix">32 € </p>
+
+                        <p>
+                            <span className="brunch">
+                            Un taost avocat saumon ou chève miel <br />
+                            Un egg muffin bacon <br/>
+                            Un fromage blanc avec du miesli et des fruits <br />
+                            Un jus d'orange pressé ou un Smoothie <br />
+                            Un boisson chaud au choix.
+                            </span>
+                        </p>
+                    </div> 
+                </div>
+
+                <FormTable></FormTable>
+                <Footer />
+            </div>
+
+        )
+    }
+
+}
+
+*/

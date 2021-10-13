@@ -1,0 +1,122 @@
+.Acceuil {
+  width: 100%;
+  height: 100vh;
+}
+.Acceuil .pageaccueil {
+  padding: 25px 20px;
+  height: 100vh;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  background: url("../../Assets/header2.png");
+  background-repeat: no-repeat;
+}
+.Acceuil .bloc {
+  height: 100vh;
+}
+.Acceuil .bloc .container {
+  display: block;
+}
+.Acceuil .bloc .bloc1 {
+  margin: 0 auto;
+}
+.Acceuil .bloc .bloc1 img {
+  height: 300px;
+}
+.Acceuil .bloc .bloc1 p {
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+.Acceuil .bloc .bloc1 p span {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 30px;
+}
+.Acceuil .pagebas {
+  padding: 25px 20px;
+  height: 50vh;
+  width: 95%;
+  margin: 20px;
+}
+.Acceuil .pagebas img {
+  height: 350px;
+}
+
+@media screen and (max-width: 960px) {
+  .Acceuil .pageaccueil {
+    background: url("../../Assets/headermbile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .Acceuil .bloc {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    border-bottom: none;
+    margin: 0 auto;
+  }
+  .Acceuil .bloc .container {
+    width: 100%;
+  }
+  .Acceuil .bloc .container .contact-form {
+    margin: 0 auto;
+    padding: 10px 20px;
+    transform: translate(0%);
+  }
+  .Acceuil .bloc .bloc1 {
+    margin: 0 auto;
+    display: inline;
+  }
+  .Acceuil .bloc .bloc1 .img img {
+    height: 250px;
+  }
+  .Acceuil .bloc .bloc1 p {
+    margin: 0 auto;
+  }
+  .Acceuil .bloc .bloc1 p span {
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .Acceuil .social {
+    margin-top: 0%;
+    text-align: center;
+    border-top: 2px solid #000000;
+  }
+  .Acceuil .pagebas {
+    margin: 0 auto;
+    background: url("../../Assets/basmobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    width: 60%;
+    height: 20vh;
+  }
+  .Acceuil .pagebas img {
+    display: none;
+  }
+
+  .footer {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Acceuil {
+    margin: 0 auto;
+  }
+  .Acceuil .pageaccueil {
+    height: 100%;
+  }
+  .Acceuil .bloc {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .Acceuil .social {
+    margin-top: 20px;
+    border-top: 2px solid #000000;
+  }
+}/*# sourceMappingURL=Accueil.css.map */

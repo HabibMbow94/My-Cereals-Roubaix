@@ -1,0 +1,36 @@
+.Header {
+  height: 10vh;
+  width: 100%;
+  background-color: #FCF1E9;
+}
+.Header .langue {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .Header {
+    margin-bottom: 20px;
+    height: 15vh;
+  }
+  .Header .langue {
+    display: block;
+    margin: -90px 90%;
+    position: relative;
+  }
+  .Header .langue .fran {
+    width: 22px;
+    display: block;
+    border-right: 3px solid #000000;
+  }
+  .Header .langue .ang {
+    display: block;
+    margin-left: 30px;
+    margin-top: -20px;
+    width: 22px;
+  }
+  .Header .langue a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,42 @@
+.social h4 {
+  text-align: center;
+  font-family: "Avenir Next Condensed";
+  font-weight: 600;
+}
+.social ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.social ul img {
+  height: 30px;
+  border-radius: 100%;
+}
+.social ul .facebook {
+  display: block;
+  transform: translate(-5%);
+}
+.social ul .instagram {
+  display: block;
+  transform: translate(-1%, -100%);
+}
+.social ul .snapchat {
+  display: block;
+  transform: translate(3%, -200%);
+}
+
+@media screen and (max-width: 750px) {
+  .social ul img {
+    height: 20px;
+  }
+  .social ul .facebook {
+    transform: translate(0%, 0%);
+  }
+  .social ul .instagram {
+    transform: translate(0%, 0%);
+  }
+  .social ul .snapchat {
+    transform: translate(0%, 0%);
+  }
+}

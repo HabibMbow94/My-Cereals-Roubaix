@@ -1,0 +1,122 @@
+.Acceuil {
+  width: 100%;
+  height: 100vh;
+}
+.Acceuil .pageaccueil {
+  width: 100%;
+  height: 30vh;
+  min-height: 400px;
+  background: url("../../Assets/header3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Acceuil .bloc .blocs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.Acceuil .bloc .blocs .img1 {
+  margin: 0 auto;
+  height: 200px;
+}
+.Acceuil .bloc .blocs .wrappers {
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.Acceuil .bloc .blocs .wrappers p span {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 700;
+}
+.Acceuil .social {
+  border-top: 2px solid #000000;
+  margin: 0 20px;
+}
+.Acceuil .pagebas {
+  width: 100%;
+  height: 30vh;
+  min-height: 200px;
+  background: url("../../Assets/bas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+.Acceuil .footer {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .Acceuil .bloc {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .Acceuil .bloc .blocs {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .Acceuil .pageaccueil {
+    background: url("../../Assets/headermbile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .Acceuil .bloc {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    border-bottom: none;
+    margin: 0 auto;
+  }
+  .Acceuil .bloc .container {
+    width: 100%;
+  }
+  .Acceuil .bloc .container .contact-form {
+    margin: 0 auto;
+    padding: 10px 20px;
+    transform: translate(0%);
+  }
+  .Acceuil .bloc .bloc1 {
+    margin: 0 auto;
+    display: inline;
+  }
+  .Acceuil .bloc .bloc1 .img img {
+    height: 250px;
+  }
+  .Acceuil .bloc .bloc1 p {
+    margin: 0 auto;
+  }
+  .Acceuil .bloc .bloc1 p span {
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .Acceuil .social {
+    margin-top: 0%;
+    text-align: center;
+    border-top: 2px solid #000000;
+  }
+  .Acceuil .pagebas {
+    margin: 0 auto;
+    background: url("../../Assets/basmobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    width: 60%;
+    height: 20vh;
+  }
+  .Acceuil .pagebas img {
+    display: none;
+  }
+
+  .footer {
+    margin: 10px;
+  }
+}
